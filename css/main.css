@@ -35,6 +35,12 @@ html {
     background: #eee;
 }
 
+.contact-form-section {
+    height: 100%;
+    padding-top: 50px;
+    text-align: center;
+    background: #fff;
+}
 .parallax-background {
   background-image: url("../images/professional_picture.jpg");
 
@@ -64,4 +70,14 @@ html {
 
 hr.double-line {
   border-top: 3px double #8c8b8b;
+}
+
+form.contact-form {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 30px;
+}
+
+.form-group {
+  margin-bottom: 60px;
 }
