@@ -169,21 +169,24 @@
             <hr class="double-line">
           </div>
         </div>
+        <div class="alert alert-success" id="confirmation" style="display: none;" role="alert">
+          Well done! You successfully submitted the form. I'll respond to you soon!
+        </div>
 
       <!-- Message Me Form -->
         <div class="row">
-          <form class="contact-form" action="php/submission.php" method="POST">
+          <form class="contact-form" id="send_message" role="form">
             <div class="form-group">
-              <label for="inputName">Your Name</label>
-              <input type="text" class="form-control" name="name" id="name" aria-describedby="inputName" placeholder="Enter Your Name">
+              <label for="name">Your Name</label>
+              <input type="text" class="form-control" name="name" id="name" aria-describedby="name" placeholder="Enter Your Name">
             </div>
             <div class="form-group">
-              <label for="inputEmail">Email Address</label>
-              <input type="email" class="form-control" name="email" id="email" aria-describedby="email" placeholder="Enter email">
+              <label for="email">Email Address</label>
+              <input type="email" class="form-control" name="email" id="email" aria-describedby="email" placeholder="Enter Your Email">
             </div>
             <div class="form-group">
-              <label for="inputMessage">Message</label>
-              <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" name="message" aria-describedby="message" rows="5"></textarea>
             </div>
             <input type="submit" class="btn btn-primary" value="Submit Form">
           </form>

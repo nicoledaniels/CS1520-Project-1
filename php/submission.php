@@ -24,7 +24,7 @@
         }
       }
 
-      //Create the submission table, if it doesn't already exist
+      //Create the table, if it doesn't already exist
       $table = mysqli_query($connection, 'select 1 from `submissions` LIMIT 1');
       if(!$table){
         $submission = "CREATE TABLE submissions (
@@ -38,7 +38,7 @@
           echo "Table submissions created";
         }
         else {
-          echo "error creating table: " .$connection->error;
+          echo "Error creating table: " .$connection->error;
         }
       }
 
