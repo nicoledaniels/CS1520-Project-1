@@ -169,24 +169,26 @@
             <hr class="double-line">
           </div>
         </div>
-      <div class="row">
-        <form class="contact-form">
-          <div class="form-group">
-            <label for="inputName">Your Name</label>
-            <input type="text" class="form-control" id="inputName" aria-describedby="inputName" placeholder="Enter Your Name">
-          </div>
-          <div class="form-group">
-            <label for="inputEmail">Email Address</label>
-            <input type="email" class="form-control" id="inputEmail" aria-describedby="email" placeholder="Enter email">
-          </div>
-          <div class="form-group">
-            <label for="inputMessage">Message</label>
-            <textarea class="form-control" id="inputMessage" rows="5"></textarea>
-          </div>
-          <input type="submit" class="btn btn-primary" value="Submit Form">
-        </form>
-       </div>
-       </div>
+
+      <!-- Message Me Form -->
+        <div class="row">
+          <form class="contact-form" action="php/submission.php" method="POST">
+            <div class="form-group">
+              <label for="inputName">Your Name</label>
+              <input type="text" class="form-control" name="name" id="name" aria-describedby="inputName" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+              <label for="inputEmail">Email Address</label>
+              <input type="email" class="form-control" name="email" id="email" aria-describedby="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="inputMessage">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Submit Form">
+          </form>
+        </div>
+     </div>
     </section>
 
   </body>
